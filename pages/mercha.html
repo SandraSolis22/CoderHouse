@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Keywords y description-->
+    <meta name="keywords" content="Alienación, Merchandising, Rock, Música, Banda, Punk, Recital, Cantante">
+    <meta name="description" content="Bienvenidos a la pagina oficial de Alienacion | Enterate de todo el merchandising disponible!">
+ß    <!-- linkeo fuente--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Quicksand:wght@300&family=Special+Elite&display=swap" rel="stylesheet">
+    <!--Link CSS Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"/>
+    <!-- linkeo el archivo css-->   
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Merchandising</title>
+</head>
+<body>
+    <header>
+        <h1 class="tituloSeccion">MERCHANDISING EN STOCK</h1>
+    </header>
+    <main class="main__mercha">
+        <form action="" class="main__mercha--formulario">
+            <div class="producto1">
+                <label class="main__mercha--lista" for="">Remeras negras </label>
+                <select class="opcionesStock" name="reme-negra" id="">
+                    <option value="vacio">Elegir..</option>
+                    <option value="ts">Talle S</option>
+                    <option value="tm">Talle M</option>
+                    <option value="txxl">Talle XXL</option>
+                </select>
+            </div>
+            <div class="producto2">
+                <label class="main__mercha--lista" for="">Remeras blancas </label>
+                <select class="opcionesStock" name="reme-negra" id="">
+                    <option value="vacio">Elegir..</option>
+                    <option value="tm">Talle M</option>
+                    <option value="tl">Talle L</option>
+                    <option value="txl">Talle XL</option>
+                </select>
+            </div>
+            <div class="producto3">
+                <label class="main__mercha--lista" for="">Gorras  </label>
+                <select class="opcionesStock" name="color-gorra" id="">
+                    <option value="vacio">Elegir..</option>
+                    <option value="g-rojo">Color rojo</option>
+                    <option value="g-negro">Color negro</option>
+                    <option value="g-gris">Color gris</option>
+                </select>
+            </div>
+            <div class="producto4">
+                <label class="main__mercha--lista" for="">Articulor para regalar </label>
+                <select class="opcionesStock" name="art-varios" id="">
+                    <option value="vacio">Elegir..</option>
+                    <option value="mate">Mate</option>
+                    <option value="taza">Taza</option>
+                    <option value="almohada">Almohada</option>
+                </select>
+            </div>
+        </form>
+        <div class="container">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Comprar
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Estamos trabajando...</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        Estamos trabajando para que puedas hacer tus comprar desde aca, mientras podes contactarnos por mensaje privado. Gracias!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>    
+    <footer>
+        <a href="../index.html"><h5><img class="logoInicio" src="../media/inicio.png" alt="imagen inicio"> </h5></a>
+    </footer>
+     <!-- Link JS-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+     crossorigin="anonymous"> 
+     </script>    
+</body>
+</html>

@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*MAPS - MERCHANDISING*/
+$productos: (
+    producto1: #f0e8e8,
+    producto2: #faf2f2,
+    producto3: #f0e8e8,
+    producto4: #faf2f2
+);
+@each $producto, $color in $productos{
+    .#{$producto}{
+        background-color: $color;
+    }
+}
+
+/*estilos a etiquetas*/
+header{
+    background-color: black;
+}
+
+footer{
+    background-image: linear-gradient(to right,#870000 , #190A05);
+    opacity: 60%;
+    margin: 2vh;
+    padding: auto;
+    a{
+    text-align: center;
+    }
+}
+
+
+tr td{
+    background-color: rgb(198, 207, 207);
+    line-height: 30px;
+    position: relative;
+    left: 20vh;
+    font-size: 20px;
+}
+
+nav ul li{
+    overflow: visible;
+    padding: 20px;
+    text-align: center;
+    line-height: 60px;
+}
+
+
+/*estilos a clases*/
+.header__inicio--titulo{
+    color: whitesmoke;
+    font-family: 'Special Elite', cursive;
+    font-size: 20vh;
+    text-align: center;
+    padding-top: 40px;
+    margin: 0px;
+    background-color: black ;
+    background-size: cover;
+    position: sticky;
+    top: 0px;
+    animation-duration: 2s;
+    animation-name: desaparece;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    }
+.imagenAliena{
+    text-align : center;
+    background-size: cover;
+    height: 760px;
+}
+
+.tituloSeccion{
+    color: rgb(61, 60, 60);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 5px;
+    letter-spacing: 10px;
+}
+.tituloMenu{
+    color: darkslategrey;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    text-decoration: underline;
+    letter-spacing: 8px;
+    margin-top: 10vh;
+    margin-left: 8vh;
+}
+.main__redes--titulo{
+    color: darkslategrey;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;  
+    letter-spacing: 10px;
+    line-height: 60px;
+    margin: 8vh;
+}
+.main__redes--lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logoRedes{
+    width: 12vh;
+    margin: 10vh;
+    z-index: 2;
+    text-align: center;
+
+/*ANIMACION*/
+    &:hover{
+    animation-duration: 2s;
+    animation-name: temblar;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    }    
+}
+.logoInicio{
+    width: 60px;
+    /*ANIMACION*/
+    &:hover{
+        animation-duration: 2s;
+        animation-name: temblar;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+}
+.logoContacto{
+    width: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: white;
+    opacity: 60%;
+    transition: all 2s;
+/*ANIMACION*/
+    &:hover{
+        width: 70px;
+        background-color: white;
+        opacity: 100%;
+    }    
+}
+.tituloVideoNuevo{
+    color: #870000;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    font-size: 6vh;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+}
+.linkVideo{
+    text-align: center;
+}
+/*FLEXBOX 2*/
+.tabla__eventos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tabla__eventos--fechas{
+    background-color: rgb(73, 72, 72);
+    color: honeydew;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 1vh;
+    width: 90vh;
+    height: auto;
+    p{
+        padding: 3vh;
+        }
+    }
+.tabla__eventos--flyers{
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 1vh;
+    width: 50vh;
+    height: auto;
+}
+
+.tabla__eventos--titulo{
+    color: rgb(240, 228, 229);
+    text-align: center;
+    background-color: rgb(22, 22, 22);
+    text-transform: uppercase;
+    padding: 3vh;
+}
+
+/*BUCLE*/
+@for $var from 1 to 4 {
+    .evento#{$var}{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+}
+
+.body__biografia--imagen{
+    text-align: center;
+    height: 100vh;
+}
+.main__mercha--formulario{
+    margin-left: 5vh;
+}
+/*FLEXBOX 3*/
+.listaDiscos{
+    display: flex;
+    flex-direction: column;
+    margin: 5vh;
+}
+
+.listaCanciones{
+    color: rgb(70, 78, 94);
+    font-size: 30px;
+    letter-spacing: 6px;
+    list-style-position: inside;
+    list-style-type: lower-greek;
+    background-color: rgb(207, 202, 202);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 50vh;
+   
+}
+/*EACH*/
+@each $disco in fielInstinto, cover{
+    .#{$disco}{
+        background-image: url(../media/#{$disco}.jpeg);
+        background-size: 20%;
+    }
+}
+    
+
+.opcionesStock{
+    color: grey;
+}
+/*FLEXBOX 1*/
+.menuPrincipal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5vh;
+    a{
+        color: rgb(1, 3, 8);
+        list-style-type: none; 
+        font-size: 4vh;  
+        display: inline-block;
+        transition: all 1s;
+        &:hover{
+            font-size: 5vh;
+            color: rgb(209, 202, 202);
+            background-color: #7e4141;
+            border-radius: 20px;
+            }
+        }
+    }
+.bodyPrincipal{
+    background-image: radial-gradient(#dfdcd9, #FFFFFF);
+}
+.main__mercha--lista{
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 8px;
+    line-height: 80px;
+}
+
+.opcionesStock{
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 8px;
+    line-height: 20px;
+}
+/*GRIDS*/
+.body__biografia{
+    display: grid;
+    grid-template-areas:
+    'textoBio textoBio'
+    'integBio fotoBio';
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 6fr 6fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.body__biografia--texto{
+    color: darkslategrey;
+    font-size: 4vh;
+    letter-spacing: 1vh;
+    line-height: 30px;
+    padding: 5px;
+    background-image: linear-gradient(to right, white, #966363);
+    grid-area: textoBio;
+}
+.body__biografia--lista{
+    color: rgb(10, 21, 43);
+    font-size: 4vh;
+    letter-spacing: 1vh;
+    padding: 5px;
+    margin: 2px;
+    list-style-position: inside;
+    text-transform: uppercase;
+    grid-area: integBio;
+
+}
+.body__biografia--imagen{
+    width: 65vh;
+    height: 35vh;
+    grid-area: fotoBio;
+    transform: skew(5deg, -5deg);
+    transition: all 2s;
+    &:hover{
+        transform: skew(-3deg, 3deg); 
+        width: 80vh;
+        height: 45vh;
+        }
+    }
+/*FLEXBOX 4*/
+.formularioContacto{
+    display: flex;
+    flex-direction: column;
+    margin: 5vh;  
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-style: italic;
+    line-height: 6vh
+}
+
+
+
+@keyframes desaparece {
+0%{
+    opacity: 0;
+}    
+100%{
+    opacity: 1;
+}
+}
+@keyframes temblar {
+    0%{
+        transform: rotateZ(20deg);
+    }    
+    25%{
+        transform: rotateZ(-20deg);
+    }   
+    50%{
+        transform: rotateZ(20deg);
+    }    
+    75%{
+        transform: rotateZ(-20deg);
+    }   
+    }
+
+    /* MEDIA QUERIES */
+/* PC ESCRITORIO*/
+
+@media only screen and (min-width: 768px) {
+    .tituloAlienacion{
+    padding-top: 40px;
+    background-color: black ;
+        }   
+    }    
+
+/* TABLET */
+
+@media only screen and (max-width: 767px) and (min-width: 321px){
+    .tituloAlienacion{
+        padding-top: 20px;
+        font-size: 30px;
+        background-color: black ;
+        }
+    .imagenAliena{
+            opacity: 0% ;
+            height: 0px;
+        }
+    /*EACH*/
+    @each $disco in fielInstinto, cover{
+        .#{$disco}{
+            background-image: none;
+        }
+    }
+
+/* MOBILE */
+
+@media only screen and (max-width: 320px) {
+    .tituloAlienacion{
+        padding-top: 20px;
+        font-size: 10px;
+        font-size: 5vh;
+        background-color: rgb(117, 114, 114) ;
+        }
+    .imagenAliena{
+            opacity: 0% ;
+            height: 0px;
+        }
+    /*EACH*/
+    @each $disco in fielInstinto, cover{
+        .#{$disco}{
+            background-image: none;
+        }
+    }
+}
+}
