@@ -337,7 +337,7 @@ nav ul li {
     opacity: 0%;
     height: 0px; }
   .linkVideo {
-    height: 40vh; }
+    height: 20vh; }
   .tituloVideoNuevo {
     font-size: 4vh;
     word-spacing: 6px;
@@ -381,7 +381,8 @@ nav ul li {
     opacity: 0%;
     height: 0px; }
   .linkVideo {
-    height: 20vh; }
+    width: 20vh;
+    height: 10vh; }
   .tituloVideoNuevo {
     font-size: 2vh;
     word-spacing: 3px;
