@@ -149,7 +149,8 @@ nav ul li{
     letter-spacing: 10px;
 }
 .linkVideo{
-    text-align: center;
+    text-align: center; 
+    height: 80vh;
 }
 /*FLEXBOX 2*/
 .tabla__eventos{
@@ -303,7 +304,6 @@ nav ul li{
     list-style-position: inside;
     text-transform: uppercase;
     grid-area: integBio;
-
 }
 .body__biografia--imagen{
     width: 65vh;
@@ -374,12 +374,48 @@ nav ul li{
             opacity: 0% ;
             height: 0px;
         }
+    .linkVideo{
+        height: 40vh;
+        }
+    .tituloVideoNuevo{
+        font-size: 4vh;
+        word-spacing: 6px;
+        letter-spacing: 6px;
+        }
+    .main__redes--titulo{
+        font-size: 20px;  
+        letter-spacing: 6px;
+        line-height: 40px;
+        margin: 6vh;
+        }
+    .logoRedes{
+        width: 8vh;
+        margin: 5vh; 
+        }   
+    .tituloSeccion{
+        font-size: 25px;
+        margin: 3px;
+        letter-spacing: 6px;
+        }
+    .body__biografia--texto{
+        font-size: 3vh;
+        letter-spacing: 1vh;
+        line-height: 20px;
+        padding: 3px;
+        }
+    .body__biografia--lista{
+        font-size: 3vh;
+        letter-spacing: 1vh;
+        padding: 6px;
+        margin: 5px;
+        }
     /*EACH*/
     @each $disco in fielInstinto, cover{
         .#{$disco}{
             background-image: none;
         }
     }
+}    
 
 /* MOBILE */
 
@@ -394,11 +430,57 @@ nav ul li{
             opacity: 0% ;
             height: 0px;
         }
+    .linkVideo{
+        height: 20vh;
+        }
+    .tituloVideoNuevo{
+        font-size: 2vh;
+        word-spacing: 3px;
+        letter-spacing: 3px;
+        }
+    .main__redes--titulo{
+        font-size: 10px;  
+        letter-spacing: 3px;
+        line-height: 20px;
+        margin: 3vh;
+        }
+    .logoRedes{
+        width: 4vh;
+        margin: 3vh; 
+        } 
+    .tituloSeccion{
+        font-size: 15px;
+        margin: 2px;
+        letter-spacing: 3px;
+        }
+    .body__biografia--texto{
+        font-size: 2vh;
+        letter-spacing: 1vh;
+        line-height: 10px;
+        padding: 2px;
+    }
+    .body__biografia--lista{
+        font-size: 2vh;
+        letter-spacing: 1vh;
+        padding: 6px;
+        margin: 5px;
+    }
+    /*GRIDS*/
+    .body__biografia{
+        display: grid;
+        grid-template-areas:
+        'textoBio'
+        'integBio'
+        'fotoBio';
+        grid-template-columns: 2fr;
+        grid-template-rows: 4fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }    
     /*EACH*/
     @each $disco in fielInstinto, cover{
         .#{$disco}{
             background-image: none;
         }
     }
-}
 }
