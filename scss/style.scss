@@ -23,7 +23,7 @@ header{
 
 footer{
     background-image: linear-gradient(to right,#870000 , #190A05);
-    opacity: 60%;
+    opacity: 40%;
     margin: 2vh;
     padding: auto;
     a{
@@ -42,9 +42,9 @@ tr td{
 
 nav ul li{
     overflow: visible;
-    padding: 20px;
+    padding: 2vh;
     text-align: center;
-    line-height: 60px;
+    line-height: 2vh;
 }
 
 
@@ -125,6 +125,7 @@ nav ul li{
         animation-timing-function: ease-out;
     }
 }
+
 .logoContacto{
     width: 50px;
     position: fixed;
@@ -133,6 +134,7 @@ nav ul li{
     background-color: white;
     opacity: 60%;
     transition: all 2s;
+    z-index: 2;
 /*ANIMACION*/
     &:hover{
         width: 70px;
@@ -234,10 +236,26 @@ nav ul li{
     }
 }
     
-
-.opcionesStock{
-    color: grey;
+.tiendaOnline{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5vh;
+   
 }
+.tiendaImagen{
+    width: 30vh;
+    height: 30vh;
+    align-self: center;
+}
+.opcionesStock{
+    text-transform: uppercase;
+    font-size: 3vh;
+    color: grey;
+    text-align: center;
+    align-self: center;
+}
+
 /*FLEXBOX 1*/
 .menuPrincipal{
     display: flex;
@@ -268,13 +286,10 @@ nav ul li{
     letter-spacing: 8px;
     line-height: 80px;
 }
-
-.opcionesStock{
-    text-transform: uppercase;
-    font-size: 25px;
-    letter-spacing: 8px;
-    line-height: 20px;
+.descriProd{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 /*GRIDS*/
 .body__biografia{
     display: grid;
@@ -291,8 +306,8 @@ nav ul li{
     font-size: 4vh;
     letter-spacing: 1vh;
     line-height: 30px;
-    padding: 5px;
-    background-image: linear-gradient(to right, white, #966363);
+    padding: 5vh;
+    background-image: linear-gradient(to right, white, #aa8484);
     grid-area: textoBio;
 }
 .body__biografia--lista{
@@ -355,12 +370,15 @@ nav ul li{
     /* MEDIA QUERIES */
 /* PC ESCRITORIO*/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1200) and (min-width: 768px) {
     .tituloAlienacion{
     padding-top: 40px;
     background-color: black ;
         }   
     }    
+    .logoContacto{
+        float: right;
+    }
 
 /* TABLET */
 
@@ -371,8 +389,7 @@ nav ul li{
         background-color: black ;
         }
     .imagenAliena{
-            opacity: 0% ;
-            height: 0px;
+        display: none;
         }
     .linkVideo{
         height: 20vh;
@@ -389,8 +406,9 @@ nav ul li{
         margin: 6vh;
         }
     .logoRedes{
-        width: 8vh;
-        margin: 5vh; 
+        width: 7vh;
+        padding: 2vh;
+        margin: 1vh; 
         }   
     .tituloSeccion{
         font-size: 25px;
@@ -398,17 +416,40 @@ nav ul li{
         letter-spacing: 6px;
         }
     .body__biografia--texto{
-        font-size: 3vh;
+        font-size: 2vh;
         letter-spacing: 1vh;
         line-height: 20px;
-        padding: 3px;
+        padding: 4vh;
+        text-align: center;
         }
     .body__biografia--lista{
-        font-size: 3vh;
+        font-size: 80%;
         letter-spacing: 1vh;
-        padding: 6px;
-        margin: 5px;
+        padding: 5vh;
+        margin: 0px;
         }
+    .body__biografia--imagen{
+        display: none;
+        }
+    footer{
+        height: 6vh;
+        }
+        .logoInicio{
+            height: 5vh;
+            width: 5vh;
+        }
+        /*GRIDS*/
+        .body__biografia{
+            display: grid;
+            grid-template-areas:
+            'textoBio'
+            'integBio'
+            'fotoBio';
+            grid-template-columns: 2fr;
+            grid-template-rows: 4fr;
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+        }   
     /*EACH*/
     @each $disco in fielInstinto, cover{
         .#{$disco}{
@@ -446,25 +487,35 @@ nav ul li{
         margin: 3vh;
         }
     .logoRedes{
-        width: 4vh;
-        margin: 3vh; 
+        width: 2vh;
+        margin: 1vh; 
         } 
     .tituloSeccion{
         font-size: 15px;
-        margin: 2px;
+        padding: 2px;
         letter-spacing: 3px;
         }
     .body__biografia--texto{
-        font-size: 2vh;
+        font-size: 70%;
         letter-spacing: 1vh;
-        line-height: 10px;
-        padding: 2px;
+        line-height: 15px;
+        padding: 5vh;
+        text-align: center;
     }
     .body__biografia--lista{
-        font-size: 2vh;
+        font-size: 60%;
         letter-spacing: 1vh;
-        padding: 6px;
-        margin: 5px;
+        padding: 5vh;
+    }
+    .body__biografia--imagen{
+        display: none;
+    }
+    footer{
+        height: 4vh;
+    }
+    .logoInicio{
+        height: 3vh;
+        width: 3vh;
     }
     /*GRIDS*/
     .body__biografia{
