@@ -17,8 +17,9 @@
   background-color: #faf2f2; }
 
 /*estilos a etiquetas*/
-header {
-  background-color: black; }
+header h1 {
+  background-color: black;
+  clear: right; }
 
 footer {
   background-image: linear-gradient(to right, #870000, #190A05);
@@ -61,7 +62,7 @@ nav ul li {
 .imagenAliena {
   text-align: center;
   background-size: cover;
-  height: 760px; }
+  height: 80%; }
 
 .tituloSeccion {
   color: #3d3c3c;
@@ -128,6 +129,9 @@ nav ul li {
     width: 70px;
     background-color: white;
     opacity: 100%; }
+
+.menuNavbar {
+  overflow: visible; }
 
 .tituloVideoNuevo {
   color: #870000;
@@ -410,8 +414,7 @@ nav ul li {
     font-size: 5vh;
     background-color: #757272; }
   .imagenAliena {
-    opacity: 0%;
-    height: 0px; }
+    display: none; }
   .linkVideo {
     width: 20vh;
     height: 10vh; }

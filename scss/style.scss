@@ -17,8 +17,9 @@ $productos: (
 }
 
 /*estilos a etiquetas*/
-header{
+header h1{
     background-color: black;
+    clear: right;
 }
 
 footer{
@@ -68,7 +69,7 @@ nav ul li{
 .imagenAliena{
     text-align : center;
     background-size: cover;
-    height: 760px;
+    height: 80%;
 }
 
 .tituloSeccion{
@@ -141,6 +142,9 @@ nav ul li{
         background-color: white;
         opacity: 100%;
     }    
+}
+.menuNavbar{
+    overflow: visible;
 }
 .tituloVideoNuevo{
     color: #870000;
@@ -468,8 +472,7 @@ nav ul li{
         background-color: rgb(117, 114, 114) ;
         }
     .imagenAliena{
-            opacity: 0% ;
-            height: 0px;
+        display: none;
         }
     .linkVideo{
         width: 20vh;
